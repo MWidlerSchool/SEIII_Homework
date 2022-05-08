@@ -4,11 +4,11 @@ class ScreenMode
     end
 
     def dark()
-        new DarkMode
+        DarkMode.new
     end
 
     def light()
-        new LightMode
+        LightMode.new
     end
 end
 
