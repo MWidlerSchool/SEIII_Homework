@@ -13,3 +13,6 @@ class ScreenMode
         raise "paint() cannot be called from parent class"
     end
 end
+
+class DarkMode < ScreenMode
+end
