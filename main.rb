@@ -22,6 +22,6 @@ end
 
 class LightMode < ScreenMode
     def draw_button(label_text, x, y, foreground_color)
-        paint(label_text, x, y, foreground_color - 10, '#111111')
+        paint(label_text, x, y, foreground_color + 10, '#E0E0E0')
     end
 end
