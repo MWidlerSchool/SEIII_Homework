@@ -16,6 +16,10 @@ class ScreenMode
     def dark()
         new DarkMode
     end
+
+    def light()
+        new LightMode
+    end
 end
 
 class DarkMode < ScreenMode
