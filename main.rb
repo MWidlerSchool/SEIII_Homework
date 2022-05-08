@@ -9,13 +9,13 @@ def draw_button(label_text, x, y, foreground_color, is_dark_mode)
 end
 
 class ScreenMode
-    def paint(label_text, x, y, foreground_color)
+    def draw_button(label_text, x, y, foreground_color)
         raise "paint() cannot be called from parent class"
     end
 end
 
 class DarkMode < ScreenMode
-    def paint(label_text, x, y, foreground_color)
+    def draw_button(label_text, x, y, foreground_color)
         paint(label_text, x, y, foreground_color - 10, '#111111')
     end
 end
